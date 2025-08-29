@@ -1,0 +1,417 @@
+{
+  "@context": [
+    "https://w3id.org/ro/crate/1.1/context",
+    {
+      "@vocab": "http://schema.org/",
+      "danala": "https://w3id.org/danala/terms#"
+    }
+  ],
+  "@graph": [
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "identifier": "ro-crate-metadata.json",
+      "about": {
+        "@id": "#danalaSchema"
+      }
+    },
+    {
+      "@id": "#danalaSchema",
+      "@type": [
+        "Dataset",
+        "RepositoryCollection"
+      ],
+      "conformsTo": {
+        "@id": "https://w3id.org/ro/profiles/schema/1.0"
+      },
+      "name": "WIP Danala Schema",
+      "description": "Schema for top end First Nations metadata terms."
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Yirritja",
+      "@type": "danala:Moiety",
+      "name": "Yirritja",
+      "description": "Yirritja (Moiety)"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Dhuwa",
+      "@type": "danala:Moiety",
+      "name": "Dhuwa",
+      "description": "Dhuwa (Moiety)"
+    },
+    {
+      "@id": [
+        "https://w3id.org/danala/terms#Wamut"
+      ],
+      "@type": "danala:Mälk",
+      "name": "Wamut"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Bäpurru",
+      "@type": "rdfs:Class",
+      "name": "Bäpurru",
+      "description": "Bäpurru (Clan)",
+      "rdfs:label": "Bäpurru"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Moiety",
+      "@type": "rdfs:Class",
+      "name": "Moiety",
+      "rdfs:label": "Moiety"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Mälk",
+      "@type": "rdfs:Class",
+      "name": "Mälk",
+      "description": "Mälk (Skin name)",
+      "rdfs:label": "Mälk"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Wäŋa",
+      "@type": "rdfs:Class",
+      "name": "Wäŋa",
+      "description": "Wäŋa (Homeland)",
+      "rdfs:label": "Wäŋa"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#ManikayGaBuŋgal",
+      "@type": "rdfs:Class",
+      "name": "Manikay ga buŋgal",
+      "description": "Song and Dance",
+      "rdfs:label": "ManikayGaBuŋgal"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Guruṯu",
+      "@type": "rdfs:Class",
+      "name": "Guruṯu",
+      "description": "Kinship system",
+      "rdfs:label": "Guruṯu"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Raypirri",
+      "@type": "rdfs:Class",
+      "name": "Raypirri",
+      "description": "Discipline",
+      "rdfs:label": "Raypirri"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#ŊathaGa",
+      "@type": "rdfs:Class",
+      "name": "Ŋatha ga",
+      "description": "Seasonal indicators",
+      "rdfs:label": "ŊathaGa"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Dhäwu",
+      "@type": "rdfs:Class",
+      "name": "Dhäwu",
+      "description": "Story",
+      "rdfs:label": "Dhäwu"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#clanAccess",
+      "@type": "rdfs:Class",
+      "name": "Clan Access",
+      "rdfs:label": "clanAccess"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#culturalAdvisor",
+      "@type": "rdf:Property",
+      "name": "Cultural Advisor",
+      "rdfs:label": "culturalAdvisor"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#hasICIPAgreement",
+      "@type": "rdf:Property",
+      "name": "Has ICIP Agreement",
+      "rdfs:label": "hasICIPAgreement",
+      "rangeIncludes": {
+        "@id": "https://w3id.org/danala/terms#ICIPAgreement"
+      }
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#ŋändipulu",
+      "@type": "rdf:Property",
+      "name": "Ŋändipulu",
+      "description": "Mother clan",
+      "rdfs:label": "ŋändipulu",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      }
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#märipulu",
+      "@type": "rdf:Property",
+      "name": "Märipulu",
+      "description": "Grandmother clan",
+      "rdfs:label": "märipulu",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      }
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#yapapulu",
+      "@type": "rdf:Property",
+      "name": "Yapapulu",
+      "description": "Sister clan",
+      "rdfs:label": "yapapulu",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      }
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#wakupulu",
+      "@type": "rdf:Property",
+      "name": "Wakupulu",
+      "description": "Brother clan",
+      "rdfs:label": "wakupulu",
+      "domainIncludes": {
+        "@id": "schema:Person"
+      }
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#open",
+      "@type": "rdf:Property",
+      "name": "Open",
+      "description": "Open access",
+      "rdfs:label": "open"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#guided/restricted",
+      "@type": "rdf:Property",
+      "name": "Guided/restricted",
+      "description": "Guided/restricted access",
+      "rdfs:label": "guided/restricted"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#self-mediated",
+      "@type": "rdf:Property",
+      "name": "Self-Mediated",
+      "description": "Self-mediated access",
+      "rdfs:label": "self-mediated"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#closed",
+      "@type": "rdf:Property",
+      "name": "Closed",
+      "description": "Closed access",
+      "rdfs:label": "closed"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#hasMoiety",
+      "@type": "rdf:Property",
+      "name": "Has Moiety",
+      "description": "Has moiety",
+      "rdfs:label": "hasMoiety"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Dhaḻwaŋu",
+      "@type": "danala:Bäpurru",
+      "name": "Dhaḻwaŋu",
+      "danala:hasMoiety": {
+        "@id": "https://w3id.org/danala/terms#Yirritja"
+      }
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Dhalwaŋu?",
+      "@type": "danala:Bäpurru",
+      "name": "Dhalwaŋu?"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Dhudi-Djapu",
+      "@type": "danala:Bäpurru",
+      "name": "Dhudi-Djapu"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Djaduwitjbi",
+      "@type": "danala:Bäpurru",
+      "name": "Djaduwitjbi"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Djambarrpuyŋu",
+      "@type": "danala:Bäpurru",
+      "name": "Djambarrpuyŋu",
+      "danala:hasMoiety": {
+        "@id": "https://w3id.org/danala/terms#Dhuwa"
+      }
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Djimalka",
+      "@type": "danala:Bäpurru",
+      "name": "Djimalka"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Djinaŋ",
+      "@type": "danala:Bäpurru",
+      "name": "Djinaŋ"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Djinba",
+      "@type": "danala:Bäpurru",
+      "name": "Djinba"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Gälpu",
+      "@type": "danala:Bäpurru",
+      "name": "Gälpu",
+      "danala:hasMoiety": {
+        "@id": "https://w3id.org/danala/terms#Dhuwa"
+      }
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Ganalbiŋu",
+      "@type": "danala:Bäpurru",
+      "name": "Ganalbiŋu"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Garrawurra",
+      "@type": "danala:Bäpurru",
+      "name": "Garrawurra"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Golumala",
+      "@type": "danala:Bäpurru",
+      "name": "Golumala",
+      "danala:hasMoiety": {
+        "@id": "https://w3id.org/danala/terms#Dhuwa"
+      }
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Gumatj",
+      "@type": "danala:Bäpurru",
+      "name": "Gumatj",
+      "danala:hasMoiety": {
+        "@id": "https://w3id.org/danala/terms#Yirritja"
+      }
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Gupapuyŋu",
+      "@type": "danala:Bäpurru",
+      "name": "Gupapuyŋu",
+      "danala:hasMoiety": {
+        "@id": "https://w3id.org/danala/terms#Yirritja"
+      }
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Guyamirrilil?",
+      "@type": "danala:Bäpurru",
+      "name": "Guyamirrilil?"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Liyagalawumirr",
+      "@type": "danala:Bäpurru",
+      "name": "Liyagalawumirr"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Liyagawumirr",
+      "@type": "danala:Bäpurru",
+      "name": "Liyagawumirr"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Manhdhalpiŋu",
+      "@type": "danala:Bäpurru",
+      "name": "Manhdhalpiŋu"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Marraŋu",
+      "@type": "danala:Bäpurru",
+      "name": "Marraŋu",
+      "danala:hasMoiety": {
+        "@id": "https://w3id.org/danala/terms#Dhuwa"
+      }
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Marraŋu/Dijnaŋ",
+      "@type": "danala:Bäpurru",
+      "name": "Marraŋu/Dijnaŋ"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Mildjiŋi",
+      "@type": "danala:Bäpurru",
+      "name": "Mildjiŋi"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Rirratjiŋu",
+      "@type": "danala:Bäpurru",
+      "name": "Rirratjiŋu",
+      "danala:hasMoiety": {
+        "@id": "https://w3id.org/danala/terms#Dhuwa"
+      }
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Wamut",
+      "@type": "danala:Bäpurru",
+      "name": "Wamut"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Wangurri",
+      "@type": "danala:Bäpurru",
+      "name": "Wangurri",
+      "danala:hasMoiety": {
+        "@id": "https://w3id.org/danala/terms#Yirritja"
+      }
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Wanybarrŋa",
+      "@type": "danala:Bäpurru",
+      "name": "Wanybarrŋa"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Warramiri",
+      "@type": "danala:Bäpurru",
+      "name": "Warramiri",
+      "danala:hasMoiety": {
+        "@id": "https://w3id.org/danala/terms#Yirritja"
+      }
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Baŋadi?",
+      "@type": "danala:Mälk",
+      "name": "Baŋadi?"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Baŋali",
+      "@type": "danala:Mälk",
+      "name": "Baŋali"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Bilinydjan",
+      "@type": "danala:Mälk",
+      "name": "Bilinydjan"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Bulanydjan",
+      "@type": "danala:Mälk",
+      "name": "Bulanydjan"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Gamarraŋ",
+      "@type": "danala:Mälk",
+      "name": "Gamarraŋ"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Ŋarritjan",
+      "@type": "danala:Mälk",
+      "name": "Ŋarritjan"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#Yalaŋbara",
+      "@type": "danala:Wäŋa",
+      "name": "Yalaŋbara"
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#YilparaBaniyala",
+      "@type": "danala:Wäŋa",
+      "name": [
+        "Yilpara",
+        "Baniyala"
+      ]
+    },
+    {
+      "@id": "https://w3id.org/danala/terms#yolnuAccess",
+      "@type": "rdf:Property",
+      "name": "Yolngu Access",
+      "rdfs:label": "yolnuAccess"
+    }
+  ]
+}
