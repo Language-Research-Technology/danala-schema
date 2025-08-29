@@ -109,22 +109,35 @@
       "rdfs:label": "Dhäwu"
     },
     {
-      "@id": "https://w3id.org/danala/terms#clanAccess",
+      "@id": "https://w3id.org/danala/terms#ClanAccess",
       "@type": "rdfs:Class",
       "name": "Clan Access",
       "rdfs:label": "clanAccess"
     },
     {
+      "@id": "http://schema.org/Person",
+      "@type": "rdfs:Class",
+      "name": "Person",
+      "description": "A person (alive, dead, undead, or fictional).",
+      "rdfs:label": "Person"
+    },
+    {
       "@id": "https://w3id.org/danala/terms#culturalAdvisor",
       "@type": "rdf:Property",
       "name": "Cultural Advisor",
-      "rdfs:label": "culturalAdvisor"
+      "rdfs:label": "culturalAdvisor",
+      "domainIncludes": {
+        "@id": "RepositoryObject"
+      }
     },
     {
-      "@id": "https://w3id.org/danala/terms#hasICIPAgreement",
+      "@id": "https://w3id.org/danala/terms#hasICIPStatement",
       "@type": "rdf:Property",
-      "name": "Has ICIP Agreement",
+      "name": "Has ICIP Statement",
       "rdfs:label": "hasICIPAgreement",
+      "domainIncludes": {
+        "@id": "RepositoryObject"
+      },
       "rangeIncludes": {
         "@id": "https://w3id.org/danala/terms#ICIPAgreement"
       }
@@ -136,7 +149,7 @@
       "description": "Mother clan",
       "rdfs:label": "ŋändipulu",
       "domainIncludes": {
-        "@id": "schema:Person"
+        "@id": "Person"
       }
     },
     {
@@ -146,7 +159,7 @@
       "description": "Grandmother clan",
       "rdfs:label": "märipulu",
       "domainIncludes": {
-        "@id": "schema:Person"
+        "@id": "Person"
       }
     },
     {
@@ -156,7 +169,7 @@
       "description": "Sister clan",
       "rdfs:label": "yapapulu",
       "domainIncludes": {
-        "@id": "schema:Person"
+        "@id": "Person"
       }
     },
     {
@@ -166,7 +179,7 @@
       "description": "Brother clan",
       "rdfs:label": "wakupulu",
       "domainIncludes": {
-        "@id": "schema:Person"
+        "@id": "Person"
       }
     },
     {
@@ -174,35 +187,50 @@
       "@type": "rdf:Property",
       "name": "Open",
       "description": "Open access",
-      "rdfs:label": "open"
+      "rdfs:label": "open",
+      "domainIncludes": {
+        "@id": "danala:ClanAccess"
+      }
     },
     {
       "@id": "https://w3id.org/danala/terms#guided/restricted",
       "@type": "rdf:Property",
       "name": "Guided/restricted",
       "description": "Guided/restricted access",
-      "rdfs:label": "guided/restricted"
+      "rdfs:label": "guided/restricted",
+      "domainIncludes": {
+        "@id": "danala:ClanAccess"
+      }
     },
     {
       "@id": "https://w3id.org/danala/terms#self-mediated",
       "@type": "rdf:Property",
       "name": "Self-Mediated",
       "description": "Self-mediated access",
-      "rdfs:label": "self-mediated"
+      "rdfs:label": "self-mediated",
+      "domainIncludes": {
+        "@id": "danala:ClanAccess"
+      }
     },
     {
       "@id": "https://w3id.org/danala/terms#closed",
       "@type": "rdf:Property",
       "name": "Closed",
       "description": "Closed access",
-      "rdfs:label": "closed"
+      "rdfs:label": "closed",
+      "domainIncludes": {
+        "@id": "danala:ClanAccess"
+      }
     },
     {
       "@id": "https://w3id.org/danala/terms#hasMoiety",
       "@type": "rdf:Property",
       "name": "Has Moiety",
       "description": "Has moiety",
-      "rdfs:label": "hasMoiety"
+      "rdfs:label": "hasMoiety",
+      "domainIncludes": {
+        "@id": "danala:Bäpurru"
+      }
     },
     {
       "@id": "https://w3id.org/danala/terms#Dhaḻwaŋu",
